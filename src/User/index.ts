@@ -27,7 +27,7 @@ import e from "express";
 /**
  * This class represents User record
  */
-class User {
+export class User {
     id:                     string;
     pseudo:                 string;
     userName:               string;
@@ -36,14 +36,14 @@ class User {
     createdAt:              Date;
     updatedAt:              Date;
 }
-class UserPayload {
+export class UserPayload {
     pseudo:                 string;
     userName:               string;
     avatarURL:              string;
     referralId:             Opt<string>;
 }
 
-const usersStorage = StableBTreeMap<string, User>(0);
+export const usersStorage = StableBTreeMap<string, User>(0);
 
 /**
  * @name getUsers
