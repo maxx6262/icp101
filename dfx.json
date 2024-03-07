@@ -5,7 +5,7 @@
       "main": "src/index.ts",
       "candid": "src/index.did",
       "candid_gen": "http",
-      "build": "npw azle users",
+      "build": "npx azle users",
       "wasm": ".azle/users/users.wasm",
       "gzip": true,
       "metadata": [
