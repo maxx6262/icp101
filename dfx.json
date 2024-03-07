@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "users": {
+      "type": "custom",
+      "main": "src/index.ts",
+      "candid": "src/index.did",
+      "candid_gen": "http",
+      "build": "npw azle users",
+      "wasm": ".azle/users/users.wasm",
+      "gzip": true,
+      "metadata": [
+        {
+          "name": "candid:service",
+          "path": "src/index.did"
+        },
+        {
+          "name": "cdk:name",
+          "content": "azle"
+        }
+      ]
+    }
+  }
+}
