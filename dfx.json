@@ -2,11 +2,11 @@
   "canisters": {
     "users": {
       "type": "custom",
-      "main": "src/index.ts",
-      "candid": "src/index.did",
+      "main": "src/User/index.ts",
+      "candid": "src/User/index.did",
       "candid_gen": "http",
       "build": "npx azle users",
-      "wasm": ".azle/users/users.wasm",
+      "wasm": ".azle/User//users.wasm",
       "gzip": true,
       "metadata": [
         {
