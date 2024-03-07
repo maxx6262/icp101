@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Vec, StableBTreeMap, Opt, ic, Result, nat64, None, Some } from 'azle';
-import e from "express";
+import { Vec, StableBTreeMap, Opt, ic, Result } from 'azle';
 
 /**
  * @name User
@@ -50,7 +49,7 @@ export const usersStorage = StableBTreeMap<string, User>(0);
  * @return Vec<User>
  *     all current stored users
  */
-function getUsers(): Vec<User> {
+export function getUsers(): Vec<User> {
     return usersStorage.values();
 }
 
